@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mui Man Hei, Ian — Accountancy, AI, and a Simple Life</title>
+  <meta name="description" content="Personal site of Mui Man Hei, Ian, a Professional Accountancy student at The Hang Seng University of Hong Kong." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Ian Mui</div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#studies">Studies</a>
+      <a href="#interests">Interests</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <p class="kicker">Hang Seng University of Hong Kong · COM1006</p>
+      <h1>Mui Man Hei, Ian</h1>
+      <p class="lede">I am an outgoing Professional Accountancy student who is curious about many things. I want a stable life, time with my family, and enough discipline to stay healthy — with AI as something I can talk to, not only a tool I use.</p>
+      <div class="actions">
+        <a class="btn" href="#studies">See what I study</a>
+        <a class="btn ghost" href="mailto:s255831@hsu.edu.hk">School email</a>
+      </div>
+    </div>
+    <aside class="stamp">
+      <p><strong>Now</strong>Professional Accountancy, HSU</p>
+      <p><strong>Course</strong>COM1006 Artificial Intelligence and Its Applications</p>
+      <p><strong>Focus</strong>AI that is useful today and still worth learning for the future</p>
+    </aside>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="section-note">This page is a short portrait of how I study, train, and think about the life I want. Visitors can move with the top menu; on a phone, open Menu and jump to a section.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="num">01</div>
+        <h3>Outgoing</h3>
+        <p>I like meeting people and talking. Being outgoing makes study and daily life less closed-off.</p>
+      </article>
+      <article class="card">
+        <div class="num">02</div>
+        <h3>Curious</h3>
+        <p>I am curious about many things. Accounting is my degree path, but I also want to understand how AI is changing work.</p>
+      </article>
+      <article class="card">
+        <div class="num">03</div>
+        <h3>Disciplined</h3>
+        <p>Gym is how I practise self-discipline. Showing up for training is a habit I want in study and work too.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="studies">
+    <h2>Studies</h2>
+    <p class="section-note">I am studying Professional Accountancy at The Hang Seng University of Hong Kong. COM1006 is where I look at AI as an application, not only as a headline.</p>
+    <div class="split">
+      <article class="panel">
+        <h3>Professional Accountancy</h3>
+        <p>I chose accountancy because I want a stable job and a stable life. Clear records, careful checking, and reliable work matter to me.</p>
+      </article>
+      <article class="panel light">
+        <h3>Why AI</h3>
+        <p>I am interested in the development of AI because it is already useful, and it will matter even more later. What stands out to me is that AI can communicate with us. It is not just a working tool.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>Interests</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="num">AI</div>
+        <h3>Talking with systems</h3>
+        <p>I care about AI that can explain, answer, and work with people, including students who are still learning the subject.</p>
+      </article>
+      <article class="card">
+        <div class="num">Gym</div>
+        <h3>Training for discipline</h3>
+        <p>I like the gym because it makes me more self-disciplined and helps me stay healthy while I study.</p>
+      </article>
+      <article class="card">
+        <div class="num">People</div>
+        <h3>Family time</h3>
+        <p>Time freedom, for me, means having time for family, not only finishing a task list.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="goals">
+    <h2>Life goals</h2>
+    <p class="section-note">I want financial freedom and time freedom. A stable job can support a stable life. The point is not a complicated lifestyle.</p>
+    <div class="split">
+      <article class="card">
+        <h3>What I want more of</h3>
+        <ul>
+          <li>Time with my family</li>
+          <li>Time to train and stay healthy</li>
+          <li>A stable job and a stable life</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>What “enough” looks like</h3>
+        <p>In the future I hope I can feel happy and have a simple life. Freedom, for me, is space for family and health, not endless busyness.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="section-note">School email only. I do not publish a phone number or home address on this site.</p>
+    <p><a class="btn" href="mailto:s255831@hsu.edu.hk">s255831@hsu.edu.hk</a></p>
+  </section>
+
+  <footer>
+    <span>Mui Man Hei, Ian · HSU · COM1006</span>
+    <span>Personal site for Artificial Intelligence and Its Applications</span>
+  </footer>
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const links = document.getElementById("navLinks");
+    btn.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    links.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => {
+        links.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
